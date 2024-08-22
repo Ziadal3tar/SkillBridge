@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&display=swap');
+
+body {
+  font-family: "Merienda", cursive;
+}
+
+input {
+  outline: 0;
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+.mainBgColor {
+  background-color: #ec0ffd;
+}
+
+.mainTextColor {
+  color: #ec0ffd;
+}
+
+.secBgColor {
+  background-color: #3aa8e6;
+}
+
+.secTextColor {
+  color: #3aa8e6;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(45deg, #30cfd0 0%, #330867 100%) !important;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #74ccff, #30cfd0 25%, #3d1a68 70%, #330867);
+  color: white;
+
+  &:hover {
+    background: linear-gradient(135deg, #f56fff, #f01cff 25%, #2fb3ff 70%, #74ccff);
+    color: white;
+  }
+}
+
+.text-hover {
+  &:hover {
+    color: #30cfd0;
+
+  }
+}

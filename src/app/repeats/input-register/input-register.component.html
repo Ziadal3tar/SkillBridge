@@ -1,0 +1,16 @@
+<div class="d-flex flex-column box transition position-relative mb-1" [ngClass]="{'mb-4': type !='password'}" data-validate="data is required">
+  <span class="mb-1">{{span}}</span>
+  <input
+    class="py-1 ps-4"
+    type="{{type}}"
+    [(ngModel)]="data"
+    (focus)="onFocus($event)"
+    (blur)="onBlur($event)"
+    (keyup)="ngOnChanges()"
+    name="data"
+    placeholder="{{placeholder}}">
+  <i class="bi fs-5 position-absolute bottom-0" [ngClass]="icon"></i>
+</div>
+<div class=" w-100 d-flex align-items-center justify-content-end">
+  <p *ngIf="type == 'password'" class="m-0 FB">Forgot password?</p>
+</div>
