@@ -15,7 +15,10 @@ export class InputRegisterComponent {
    @Input()placeholder:any
    @Input()span:any
    @Input()icon:any
+   @Input()login:any
    @Input()type:any = 'text'
+
+   @Input()Error:any 
   onFocus(event: any) {
     const parentElement = event.target.parentElement;
     const nextElementSibling = event.target.nextElementSibling;

@@ -1,0 +1,49 @@
+#confirm {
+  color: #fff;
+position: relative;
+  p {
+    font-size: 18px;
+    @media (max-width:578px) {
+      font-size: 14px;
+
+    }
+  }
+
+  background: linear-gradient(135deg, #74ccff, #3a9ac0 25%, #3d1a68 70%, #03275a);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  .boxCode {
+    padding-right: 60px;
+    position: relative;
+    .code {
+      width: 28px;
+      height: 48px;
+      border-radius: 5px;
+      border: 3px transparent solid !important;
+      box-sizing: border-box;
+      border: 0;
+      outline: none;
+      margin: 0 3px;
+      padding: 0 5px;
+    }
+
+    .active {
+      width: 28px;
+      height: 48px;
+      border: 3px #03275a solid !important;
+      box-sizing: border-box;
+    }
+    .userInterface{
+      position: absolute;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 10px;
+      width: 50px;
+    }
+  }
+
+}

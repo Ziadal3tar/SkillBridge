@@ -1,5 +1,9 @@
 #register {
 height: 100vh;
+@media (max-width:578px) {
+  height: auto !important;
+}
+
   .box {
     h1{
       font-weight: 900;

@@ -1,22 +1,38 @@
-// import { gql } from 'apollo-angular';
+import { gql } from 'apollo-angular';
 
-// const logIn = gql`
-//   mutation createUser($userName: String!, $email: String!, $password: String!) {
-//     addTodo(userName: $userName, email: $email, password: $password) {
-//       _id
-//       username
-//       email
-//     }
-//   }
-// `;
+const signUp = gql`
+mutation createUser($createUserInput: CreateUserInput!) {
+  createUser(createUserInput: $createUserInput) {
+    _id
+    userName
+    email
+    password
+    role
+    emailConfirmationCode
+  }
+}
+`;
 
-// const signUp = gql`
-//   query login($email: String!, $password: String!) {
-//     deleteTodo(email: $email, password: $password) {
-//       email
-//       _id
-//     }
-//   }
-// `;
 
-// export { signUp, logIn };
+
+const logIn = gql`
+  query login($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
+      _id
+      userName
+      email
+    }
+  }
+`;
+
+const confirmEmail = gql`
+  mutation ConfirmEmail($email: String!, $code: String!) {
+    confirmEmail(email: $email, code: $code)
+  }
+`;
+const sendCode = gql`
+  mutation sendCode($email: String!) {
+    sendCode(email: $email)
+  }
+`;
+export { signUp, logIn,confirmEmail,sendCode };

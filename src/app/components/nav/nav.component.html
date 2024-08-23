@@ -1,0 +1,189 @@
+<nav class="col-12 row m-0">
+  <div class="col-3 logoBox d-flex align-items-center">
+    <img src="./asset/LOGO.png" alt="">
+    <p>SkillBridge </p>
+  </div>
+  <div class="col-6 row navBox center-center m-0 d-none d-lg-flex">
+    <div class="col-12 box m-0">
+      <ul class="center-between">
+        <li><a>Home</a></li>
+        <li (mouseleave)="liActive = '' " (mouseenter)="liActive = 'Pages'"><a>Pages</a> <i
+            class="bi bi-caret-down-fill ms-1"></i>
+          <div [ngClass]="{'closeHover': liActive != 'Pages'}" class="liDropDown row col-12 m-0 ">
+            <ul>
+              <li>About Us</li>
+              <li>Contact</li>
+              <li>Profile</li>
+              <li>Events</li>
+              <li>Shop</li>
+              <li>Error 404</li>
+            </ul>
+          </div>
+        </li>
+        <li (mouseleave)="liActive = '' " (mouseleave)="liActive = '' " (mouseenter)="liActive = 'Courses'">
+          <a>Courses</a><i class="bi bi-caret-down-fill ms-1"></i>
+          <div [ngClass]="{'closeHover': liActive != 'Courses'}" class="dropDown row col-12 m-0 ">
+            <div class="col-10 row">
+
+              <div class="col-4 px-0 items">
+                <p class="text-start mainTextColor fw-bold">Courses</p>
+                <ul>
+                  <li>Courses</li>
+                  <li>Course List</li>
+                  <li>Course Grid</li>
+                  <li>Course List Two</li>
+                  <li>Course Grid Two</li>
+                  <li>Course Grid Three</li>
+                </ul>
+              </div>
+              <div class="col-4 px-0 items">
+                <p class="text-start mainTextColor fw-bold">Course Details</p>
+                <ul>
+                  <li>Course Details</li>
+                  <li>Course Details v2</li>
+                  <li>Course Details v3</li>
+                  <li>Comming Soon</li>
+                  <li>Comming Soon</li>
+                  <li>Comming Soon</li>
+
+
+
+                </ul>
+              </div>
+              <div class="col-4 px-0 items">
+                <p class="text-start mainTextColor fw-bold">Others</p>
+                <ul>
+                  <li>Become an Instructor</li>
+                  <li>Instructor Profile</li>
+                  <li>Instructor</li>
+                  <li>Membership Plan</li>
+                  <li>Log In</li>
+                  <li>Registration</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 options">
+              <div class="box">
+                <div><i class="bi bi-plus-square"></i>
+                  <p>Create Course</p>
+                </div>
+                <div><i class="bi bi-info-circle"></i>
+                  <p>Lesson Details</p>
+                </div>
+                <div><i class="bi bi-person-workspace"></i>
+                  <p>Instructor</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li><a>DashBoard</a></li>
+        <li><a>Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-3 user center-end d-none d-lg-flex">
+    <div class="cart center-center pointer position-relative"><i class="bi bi-cart3 border-end border-dark px-3"></i>
+
+      <p class="length position-absolute top-0 end-0 center-center">0</p>
+    </div>
+    <button class="btn login">LogIn</button>
+    <button class="btn signup">SignUp</button>
+  </div>
+  <div class="col-9 center-end d-flex d-lg-none">
+    <svg (click)="openSideNav = true" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="14" width="18" height="2" fill="#000000"></rect>
+      <rect y="7" width="18" height="2" fill="#000000"></rect>
+      <rect width="18" height="2" fill="#000000"></rect>
+    </svg>
+  </div>
+</nav>
+<div class="sideNav" [ngClass]="{'openSideNav': openSideNav}">
+  <div class="box w-100 h-100 position-relative">
+    <div class="closeNav center-center" (click)="openSideNav = false">
+
+      <i class=" bi bi-x-lg"></i>
+    </div>
+    <ul>
+      <li><a>Home</a></li>
+      <li>
+        <div class=" col-12 center-between " (click)="closeSideNavLi('Pages')">
+          <a>Pages</a><i class="bi  ms-1"
+            [ngClass]="sideNavLiActive == 'Pages'?'bi-caret-up-fill':'bi-caret-down-fill'"></i>
+        </div>
+        <div class="col-12 dropDown" [ngClass]="{'closeLiSideNav': sideNavLiActive != 'Pages'}">
+          <ul>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Profile</li>
+            <li>Events</li>
+            <li>Shop</li>
+            <li>Error 404</li>
+          </ul>
+        </div>
+      </li>
+      <li class=" row">
+        <div class=" col-12 center-between " (click)="closeSideNavLi('Courses')">
+          <a>Courses</a><i class="bi  ms-1"
+            [ngClass]="sideNavLiActive == 'Courses'?'bi-caret-up-fill':'bi-caret-down-fill'"></i>
+        </div>
+        <div class="col-12 dropDown" [ngClass]="{'closeLiSideNav': sideNavLiActive != 'Courses'}">
+
+          <div class="col-12 px-0 items">
+            <p class="text-start mainTextColor fw-bold">Courses</p>
+            <ul>
+              <li>Courses</li>
+              <li>Course List</li>
+              <li>Course Grid</li>
+              <li>Course List Two</li>
+              <li>Course Grid Two</li>
+              <li>Course Grid Three</li>
+            </ul>
+          </div>
+          <div class="col-12 px-0 items">
+            <p class="text-start mainTextColor fw-bold">Course Details</p>
+            <ul>
+              <li>Course Details</li>
+              <li>Course Details v2</li>
+              <li>Course Details v3</li>
+              <li>Comming Soon</li>
+              <li>Comming Soon</li>
+              <li>Comming Soon</li>
+
+
+
+            </ul>
+          </div>
+          <div class="col-12 px-0 items">
+            <p class="text-start mainTextColor fw-bold">Others</p>
+            <ul>
+              <li>Become an Instructor</li>
+              <li>Instructor Profile</li>
+              <li>Instructor</li>
+              <li>Membership Plan</li>
+              <li>Log In</li>
+              <li>Registration</li>
+            </ul>
+          </div>
+          <div class="col-12 options">
+            <div class="box">
+              <div><i class="bi bi-plus-square"></i>
+                <p>Create Course</p>
+              </div>
+              <div><i class="bi bi-info-circle"></i>
+                <p>Lesson Details</p>
+              </div>
+              <div><i class="bi bi-person-workspace"></i>
+                <p>Instructor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a>Dashboard</a></li>
+      <li><a>Blog</a></li>
+
+    </ul>
+  </div>
+</div>

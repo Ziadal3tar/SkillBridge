@@ -10,7 +10,8 @@
     name="data"
     placeholder="{{placeholder}}">
   <i class="bi fs-5 position-absolute bottom-0" [ngClass]="icon"></i>
+  <p class="error text-white px-3 py-1 rounded-5 bg-danger" *ngIf="Error?.code == type" >{{Error?.message}}</p>
 </div>
-<div class=" w-100 d-flex align-items-center justify-content-end">
+<div class=" w-100 d-flex align-items-center justify-content-end" *ngIf="login">
   <p *ngIf="type == 'password'" class="m-0 FB">Forgot password?</p>
 </div>

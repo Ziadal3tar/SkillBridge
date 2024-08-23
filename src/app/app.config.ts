@@ -7,5 +7,5 @@ import { provideHttpClient } from '@angular/common/http';
 import { graphqlProvider } from './graphql.provider';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration(), provideHttpClient(), graphqlProvider, provideHttpClient(), graphqlProvider]
+  providers: [provideRouter(routes), provideClientHydration(), provideHttpClient(), graphqlProvider, provideHttpClient(), graphqlProvider, provideHttpClient(), graphqlProvider]
 };
