@@ -1,4 +1,4 @@
-<div id="confirm" class="row col-12 p-3">
+<div id="confirm" class="row col-12 p-3 m-0 ">
   <p class=" col-12 col-md-6">A verification code has been sent to {{emailVerification}}. Enter the code to continue and be redirected.</p>
   <div class="boxCode  col-12 col-md-6 d-flex align-items-center justify-content-start justify-content-sm-end ">
     <input *ngFor="let item of arrayOfInputs; let x = index"
@@ -16,7 +16,7 @@
     (keyup)="moveToNextInput($event, x)" />
     <div class="userInterface">
 
-      <div *ngIf="!loading" class="spinner-border " role="status">
+      <div *ngIf="loading" class="spinner-border " role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
       <i *ngIf="confirmed" class="bi bi-check fs-1 text-success "></i>

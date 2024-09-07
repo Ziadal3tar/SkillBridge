@@ -1,0 +1,19 @@
+section {
+  .box {
+    border-bottom: solid rgba(0, 0, 0, 0.204) 1px;
+
+    p {
+      margin: 0 20px 0 0;
+      padding: 10px;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .active {
+      transition: 0.5s;
+      color: #3a9ac0 !important;
+      border-bottom: 1px #3a9ac0 solid;
+
+    }
+  }
+}

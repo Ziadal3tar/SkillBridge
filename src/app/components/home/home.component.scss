@@ -1,0 +1,184 @@
+#header {
+  .rightHalf {
+    padding-left: 250px;
+
+    @media (min-width:1450px) and (max-width:1849px) {
+      padding-left: 120px;
+    }
+
+    @media (min-width:1250px) and (max-width:1449px) {
+      padding-left: 80px;
+    }
+
+    @media (min-width:1000px) and (max-width:1249px) {
+      padding-left: 60px;
+    }
+
+    @media (min-width:800px) and (max-width:999px) {
+      padding-left: 40px;
+    }
+
+    @media (max-width:799px) {
+      padding-left: 20px;
+    }
+
+    >* {
+      padding: 15px 0;
+    }
+
+    h1 {
+      width: 90%;
+      font-size: 50px;
+      font-weight: 800;
+
+      span {
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 100%;
+          height: 5px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: rgb(255, 183, 0);
+          padding: 0;
+          border-radius: 4px 60% 10% 0px;
+        }
+      }
+    }
+
+    .students {
+      .img2 {
+        transform: translateX(-15px);
+      }
+
+      .img3 {
+        transform: translateX(-30px);
+        position: relative;
+
+        .layer {
+          width: 100%;
+          height: 100%;
+          background-color: #03275a57;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .img {
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        border: 5px solid white;
+
+        img {
+          object-fit: contain;
+          object-position: center;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .banner {
+    position: absolute;
+    width: 70px;
+    transition: transform 0.2s ease;
+  }
+
+  .banner1 {
+    top: 50%;
+    left: 80px;
+  }
+
+  .banner2 {
+    bottom: 100px;
+    right: 80px;
+  }
+
+  .banner3 {
+    top: 150px;
+    left: 50%;
+  }
+
+  .WorldWide {
+    margin: 200px 0 0 0;
+    padding: 0 250px;
+
+    @media (min-width:1450px) and (max-width:1849px) {
+      padding: 0 120px;
+    }
+
+    @media (min-width:1250px) and (max-width:1449px) {
+      padding: 0 80px;
+    }
+
+    @media (min-width:1000px) and (max-width:1249px) {
+      padding: 0 60px;
+    }
+
+    @media (min-width:800px) and (max-width:999px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width:799px) {
+      padding: 0 20px;
+    }
+.WwHalf1{
+  .WF1Left{
+    div{
+    }
+  }
+}
+    .WwHalf2 {
+      .H2Mid {
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          margin-right: 15px !important;
+        }
+
+        p {
+          font-size: 13px;
+        }
+
+        h5 {
+          font-size: 20px;
+        }
+      }
+
+      .H2Bot {
+        .img {
+
+          padding: 4px;
+          border: solid 1px rgba(0, 0, 0, 0.415);
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          div {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+           position: relative;
+            img {
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

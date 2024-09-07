@@ -1,0 +1,49 @@
+<section>
+  <h3 class="py-4"> Settings</h3>
+
+  <div class="box d-flex">
+    <p (click)="tap = 'Profile'" [ngClass]="{'active': tap == 'Profile'}" class="active">Profile</p>
+    <p (click)="tap = 'Password'" [ngClass]="{'active': tap == 'Password'}">Password</p>
+    <p (click)="tap = 'Social'" [ngClass]="{'active': tap == 'Social'}">Social</p>
+  </div>
+</section>
+<div class=" w-100 center-center flex-column my-5 Profile" *ngIf="tap == 'Profile'">
+  <div class="cover position-relative">
+    <button class="position-absolute btn mainBgColor text-white m-3">Upload Cover Photo</button>
+    <img src="../../../../assets/lion-king-with-full-armor-weapon-generative-ai.jpg" alt="">
+    <div class="delete center-center position-absolute end-0 m-3 top-0"><i class="bi bi-trash-fill text-white"></i>
+    </div>
+
+    <div class="img position-absolute bottom-0 m-3 d-flex align-items-end justify-content-center">
+      <img src="https://secure.gravatar.com/avatar/199021cc8fe58c8ec9fdf8f8220c623f?s=300&d=mm&r=g" alt="">
+      <div (click)="openOptions = !openOptions" class="upload position-absolute"><i
+          class="bi bi-camera-fill text-white"></i></div>
+    </div>
+    <div *ngIf="openOptions" class="options m-3">
+      <p>upload Photo</p>
+      <p>Delete</p>
+    </div>
+  </div>
+</div>
+
+<div class=" w-100 center-center flex-column py-5" *ngIf="tap == 'Password'">
+
+</div>
+
+<div class=" w-100 center-center flex-column py-5" *ngIf="tap == 'Social'">
+
+</div>
+<div class="data row m-0">
+  <div class="d-flex flex-column col-12 col-md-6 px-3 my-3" *ngFor="let item of data">
+    <label for="">{{item.dataName}}</label>
+    <input type="text" class="px-3 py-2" placeholder="{{item.dataName}}" [(ngModel)]="item.dataValue">
+  </div>
+
+  <div class="d-flex flex-column col-12 px-3 my-3">
+    <label for="">Skill/Occupation</label>
+    <input type="text" class="px-3 py-2" placeholder="UX Designer" [(ngModel)]="Skill">
+  </div>
+
+
+  <button class=" btn mainBgColor text-white col-3 ms-3 mt-4">Update Profile</button>
+</div>

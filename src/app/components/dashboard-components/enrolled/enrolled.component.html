@@ -1,0 +1,23 @@
+<section>
+  <h3 class="py-4"> Completed Courses</h3>
+
+  <div class="box d-flex">
+    <p (click)="tap = 'Enrolled'" [ngClass]="{'active': tap == 'Enrolled'}" class="active">Enrolled Courses</p>
+    <p (click)="tap = 'Active'" [ngClass]="{'active': tap == 'Active'}">Active Courses</p>
+    <p (click)="tap = 'Completed'" [ngClass]="{'active': tap == 'Completed'}">Completed Courses</p>
+  </div>
+
+  <div class=" w-100" *ngIf="tap == 'Enrolled'">
+    <app-no-data></app-no-data>
+
+  </div>
+
+  <div class=" w-100" *ngIf="tap == 'Active'">
+    <app-no-data></app-no-data>
+
+  </div>
+
+  <div class=" w-100" *ngIf="tap == 'Completed'">
+    <app-no-data></app-no-data>
+  </div>
+</section>

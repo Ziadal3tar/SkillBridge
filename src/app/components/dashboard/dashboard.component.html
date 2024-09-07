@@ -1,0 +1,51 @@
+<section id="dashboard" class="mainPadding">
+  <div class="profile ">
+    <div class="background">
+      <div class="data">
+        <div class="img"><img src="https://secure.gravatar.com/avatar/199021cc8fe58c8ec9fdf8f8220c623f?s=300&d=mm&r=g"
+            alt=""></div>
+        <div class="userData">
+          <p class="userName">ziad alattar</p>
+          <p> <span>0 </span>Course Enrolled <i class="bi bi-dot"></i> <span> 0</span> Course Completed </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div class="row m-0">
+      <div class="col-12 col-md-3 col-lg-4 nav">
+        <div class="box">
+
+          <ul>
+            <li [ngClass]="{'active': tap == 'dashboard'}" (click)="tap = 'dashboard'"><i class="bi bi-speedometer"></i>Dashboard</li>
+            <li [ngClass]="{'active': tap == 'profile'}" (click)="tap = 'profile'"><i class="bi bi-person-fill"></i>My Profile</li>
+            <li [ngClass]="{'active': tap == 'enrolled'}" (click)="tap = 'enrolled'"><i class="bi bi-mortarboard-fill"></i>Enrolled Course</li>
+            <li [ngClass]="{'active': tap == 'wishlist'}" (click)="tap = 'wishlist'"><i class="bi bi-save2-fill"></i>Wishlist</li>
+            <li [ngClass]="{'active': tap == 'reviews'}" (click)="tap = 'reviews'"><i class="bi bi-star-fill"></i>Reviews</li>
+            <li [ngClass]="{'active': tap == 'quiz'}" (click)="tap = 'quiz'"><i class="bi bi-view-stacked"></i>My Quiz Attempts</li>
+            <li [ngClass]="{'active': tap == 'order'}" (click)="tap = 'order'"><i class="bi bi-cart-fill"></i>Order History</li>
+            <li [ngClass]="{'active': tap == 'questions'}" (click)="tap = 'questions'"><i class="bi bi-question-diamond-fill"></i>Question & Answer</li>
+            <li [ngClass]="{'active': tap == 'setting'}" (click)="tap = 'setting'"><i class="bi bi-gear-wide-connected"></i>Setting</li>
+            <li (click)="Logout()"><i class="bi bi-box-arrow-right"></i>Logout</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-9 col-lg-8 content mt-5 mt-md-0">
+        <div class="box">
+
+          <app-dashboard-1 *ngIf="tap == 'dashboard'"></app-dashboard-1>
+          <app-profile *ngIf="tap == 'profile'"></app-profile>
+          <app-enrolled *ngIf="tap == 'enrolled'"></app-enrolled>
+          <app-wishlist *ngIf="tap == 'wishlist'"></app-wishlist>
+          <app-reviews *ngIf="tap == 'reviews'"></app-reviews>
+          <app-my-quiz-attempts *ngIf="tap == 'quiz'"></app-my-quiz-attempts>
+          <app-order *ngIf="tap == 'order'"></app-order>
+          <app-questions-answer *ngIf="tap == 'questions'"></app-questions-answer>
+          <app-setting *ngIf="tap == 'setting'"></app-setting>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
