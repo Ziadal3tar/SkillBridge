@@ -1,0 +1,46 @@
+section {
+  .event{
+    position: relative;
+    &:hover{
+      &:after{ height: 100%;
+        top: 0%;
+
+      }
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      left: -20px;
+      top: 50%;
+      width: 5px;
+      height: 0%;
+      background-color: red;
+      border-radius:  3px 0 0 3px ;
+transition: 0.3s;
+    }
+  .details {
+    .data {
+      p {
+        color: gray;
+        display: inline-block;
+        margin: 0 8px 0 0;
+        font-size: 14px;
+
+        i {
+          padding: 0 5px 0 0;
+        }
+      }
+    }
+    .title{
+
+      font-size: 24px;
+      font-weight: 700;
+      margin: 10px 0;
+      cursor: pointer;
+    &:hover{
+      color: #03275a;
+    }
+    }
+
+  }}
+}

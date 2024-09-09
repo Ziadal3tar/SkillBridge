@@ -1,0 +1,62 @@
+section {
+  width: 100%;
+  background-image: url(../../../assets/choose-bg.jpg);
+
+  // background-image: ;
+  .img1 {
+    // width: 100%;
+    padding: 10px;
+
+  }
+
+  .img2 {
+    padding: 30px;
+    transform: translateY(60px);
+  }
+
+  .imgs {
+    img {
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .rotate {
+    width: 25%;
+    top: 35%;
+    right: 53%;
+    border-radius: 50% 50% 50% 50%;
+    filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+    transition: 2000s;
+  }
+
+  .rightBottom {
+    .Advantages {
+      padding:0 10px 0 0;
+      height: 60px;
+
+        .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.213);
+        padding: 0;
+        height: 60px;
+        border-radius: 6px;
+        color: white;
+
+        svg {
+          margin: 20px;
+        }
+
+        p {
+
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

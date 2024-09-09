@@ -1,26 +1,26 @@
 #header {
   .rightHalf {
-    padding-left: 250px;
+    // padding-left: 250px;
 
-    @media (min-width:1450px) and (max-width:1849px) {
-      padding-left: 120px;
-    }
+    // @media (min-width:1450px) and (max-width:1849px) {
+    //   padding-left: 120px;
+    // }
 
-    @media (min-width:1250px) and (max-width:1449px) {
-      padding-left: 80px;
-    }
+    // @media (min-width:1250px) and (max-width:1449px) {
+    //   padding-left: 80px;
+    // }
 
-    @media (min-width:1000px) and (max-width:1249px) {
-      padding-left: 60px;
-    }
+    // @media (min-width:1000px) and (max-width:1249px) {
+    //   padding-left: 60px;
+    // }
 
-    @media (min-width:800px) and (max-width:999px) {
-      padding-left: 40px;
-    }
+    // @media (min-width:800px) and (max-width:999px) {
+    //   padding-left: 40px;
+    // }
 
-    @media (max-width:799px) {
-      padding-left: 20px;
-    }
+    // @media (max-width:799px) {
+    //   padding-left: 20px;
+    // }
 
     >* {
       padding: 15px 0;
@@ -88,30 +88,10 @@
     }
   }
 
-  .banner {
-    position: absolute;
-    width: 70px;
-    transition: transform 0.2s ease;
-  }
 
-  .banner1 {
-    top: 50%;
-    left: 80px;
-  }
-
-  .banner2 {
-    bottom: 100px;
-    right: 80px;
-  }
-
-  .banner3 {
-    top: 150px;
-    left: 50%;
-  }
 
   .WorldWide {
-    margin: 200px 0 0 0;
-    padding: 0 250px;
+    margin: 150px 0 0 0;
 
     @media (min-width:1450px) and (max-width:1849px) {
       padding: 0 120px;
@@ -132,12 +112,28 @@
     @media (max-width:799px) {
       padding: 0 20px;
     }
-.WwHalf1{
-  .WF1Left{
-    div{
+
+    .WwHalf1 {
+      .WF1Left {}
+
+      .WF1Right {
+        .borderPlay {
+          position: absolute;
+          border-radius: 50%;
+          transition: 2s;
+
+          .play {
+            background-color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+          }
+
+        }
+      }
     }
-  }
-}
+
     .WwHalf2 {
       .H2Mid {
 
@@ -164,12 +160,14 @@
           border-radius: 50%;
           width: 60px;
           height: 60px;
+
           div {
             width: 100%;
             height: 100%;
             border-radius: 50%;
             overflow: hidden;
-           position: relative;
+            position: relative;
+
             img {
               object-fit: cover;
               object-position: center;
@@ -180,5 +178,92 @@
         }
       }
     }
+  }
+
+  .trustBy {
+
+    margin-top: 150px !important;
+
+    .trusts {
+
+      .trustLogo {
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.327);
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+
+      }
+    }
+  }
+
+  .courses {
+    .filter {
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          padding: 0 10px;
+          margin: 0 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          background-color: #00000022;
+          color: #03275a;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: #03275a;
+            color: #fff;
+          }
+        }
+
+        .active {
+          background-color: #03275a;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.numbers {
+
+  width: 100%;
+  background-image: url(../../../assets/choose-bg.jpg);
+  height: auto;
+  padding: 30px 0;
+
+  div {
+    margin: 20px 0;
+
+      @media (min-width : 768px) and (max-width : 992px) {
+        .numBorder1,.numBorder3{
+        border-right: 1px solid white;
+        }
+    }
+    @media (min-width : 992px) {
+      .numBorder1,.numBorder2,.numBorder3{
+      border-right: 1px solid white;
+      }}
+  }
+
+  svg {
+    margin: 0 0 10px 0;
   }
 }

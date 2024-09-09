@@ -1,0 +1,27 @@
+.course {
+  .img {
+    width: 100%;
+    height: 200px;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+    }
+  }
+  .category{
+    margin: 10px 0;
+    padding: 5px;
+    display: inline-flex;
+    background-color: #03275a20;
+    color: #03275a;
+    border-radius: 4px;
+
+  }
+  .lessonsStudents{
+    color: gray;
+    font-size: 14px;
+  }
+}

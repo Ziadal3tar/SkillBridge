@@ -1,0 +1,25 @@
+<section class="mainPadding py-5">
+  <div class=" center-center flex-column">
+
+    <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Our Event</p>
+    <h2 class="my-2 ">Upcoming Events</h2>
+    <p class="text-secondary">You'll find something to spark your curiosity and enhance</p>
+  </div>
+
+
+
+  <div class="event center-between m-0 py-4" *ngFor="let item of [0,0,0,0,0,0]; let i=index">
+    <div class="img col-2"><img src="../../../assets/event1.jpg" alt=""></div>
+    <div class="details col-8 ps-5">
+      <div class="data"><p class="date"><i class="bi bi-calendar3"></i>July 24, 2023</p>
+        <p class="time"><i class="bi bi-clock-history"></i>10:45 AM-01:30 PM
+
+        </p><p class="address"><i class="bi bi-geo-alt"></i>Yarra Park, Melbourne</p>
+      </div>
+      <div class="title">
+        <p>Edu Fest 2023: Igniting Minds Off On Transforming Lives</p>
+      </div>
+    </div>
+    <button class="btn mainBgColor text-white col-2">Get Ticket <i class="bi bi-arrow-right"></i></button>
+  </div>
+</section>

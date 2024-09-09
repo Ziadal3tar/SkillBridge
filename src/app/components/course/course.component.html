@@ -1,0 +1,28 @@
+<section class="p-4 course">
+  <div class="img">
+    <img [src]="course.imgSrc" alt="">
+  </div>
+  <div class="category"><p>{{course.category}}</p></div>
+  <div class="d-flex lessonsStudents">
+    <p class="me-3">
+      <i class="bi bi-journal-check"></i>
+      {{course.lessons.length}} Lessons
+    </p>
+    <p class="me-3">
+      <i class="bi bi-people-fill"></i>
+      {{course.students.length}} Students
+    </p>
+  </div>
+  <div class="title my-3 fs-5">{{course.name}}</div>
+  <div class="teacher  fs-6">{{course.teacher}}</div>
+  <div class="data center-between  mt-3">
+    <div class="stars center-start ">
+      4.00
+      <i class="bi bi-star-fill text-warning ms-1"></i>
+      <i class="bi bi-star-fill text-warning ms-1"></i>
+      <i class="bi bi-star-fill text-warning ms-1"></i>
+      <i class="bi bi-star-fill text-warning ms-1"></i>
+    </div>
+    <div class="price fs-5">400.00$</div>
+  </div>
+</section>
