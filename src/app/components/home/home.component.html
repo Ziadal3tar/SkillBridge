@@ -1,40 +1,41 @@
 <section id="header" class="mainPadding" (mousemove)="onMouseMove($event)">
-  <header class="row m-0 position-relative">
-    <div class="col-6 d-flex align-items-start justify-content-center flex-column rightHalf">
+  <header class="row m-0 position-relative ">
+    <div class="col-12 col-md-6 d-flex align-items-start justify-content-center flex-column leftHalf">
       <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Gateway to Lifelong Learning</p>
       <h1>Unlock Your Potential
         with Online <span>Learning</span></h1>
-      <p class="text-secondary w-75">Discover a world of knowledge and opportunities with our online education platform
+      <p class="text-secondary ">Discover a world of knowledge and opportunities with our online education platform
         pursue a new career.</p>
-      <div class=" d-flex justify-content-between">
-        <button class="btn mainBgColor text-white p-3">View All Courses <i class="bi bi-arrow-right ps-3"></i></button>
-        <div class="d-flex students align-items-center ps-4">
+      <div class=" d-flex justify-content-between align-items-center lastLine row m-0">
+        <button class="col-12 col-lg-4 mb-3 mb-lg-0 btn mainBgColor text-white center-center ">View All Courses <i
+            class="bi bi-arrow-right ps-3"></i></button>
+        <div class="col-8 col-lg-5 d-flex students align-items-center ps-4">
           <div class="img img1">
-            <img src="../../../assets/client-sm-4.jpg" alt="">
+            <img src="./assets/client-sm-4.jpg" alt="">
           </div>
           <div class="img img2">
-            <img src="../../../assets/client-sm-1.jpg" alt="">
+            <img src="./assets/client-sm-1.jpg" alt="">
           </div>
           <div class="img img3">
-            <img src="../../../assets/client-sm-3.jpg" alt="">
+            <img src="./assets/client-sm-3.jpg" alt="">
             <div class="layer center-center text-white fs-5">+</div>
           </div>
 
         </div>
-        <div class="">
+        <div class="col-4 col-lg-3 ">
           <h4>2k students</h4>
           <h6>Joint our online Class</h6>
         </div>
       </div>
     </div>
-    <div class="col-6">
-      <img src="../../../assets/header.png" alt="">
+    <div class="col-12 col-md-6 rightHalf center-center">
+      <img src="./assets/header.png" alt="">
     </div>
-    <img class="banner banner1" src="../../../assets/banner-shape01.svg" alt=""
+    <img class="banner banner1" src="./assets/banner-shape01.svg" alt=""
       [ngStyle]="{'transform': banner1Transform}">
-    <img class="banner banner2" src="../../../assets/banner-shape02.svg" alt=""
+    <img class="banner banner2" src="./assets/banner-shape02.svg" alt=""
       [ngStyle]="{'transform': banner2Transform}">
-    <img class="banner banner3" src="../../../assets/banner-shape03.svg" alt=""
+    <img class="banner banner3" src="./assets/banner-shape03.svg" alt=""
       [ngStyle]="{'transform': banner3Transform}">
   </header>
 
@@ -45,12 +46,12 @@
 
 
 
-  <div class="row m-0 trustBy">
+  <div class="row m-0 trustBy center-center">
 
-    <div class="col-2 d-flex align-items-end justify-content-end">
-      <h4>Trusted by:</h4>
+    <div class="col-12 col-md-3 center-center">
+      <h4 class="">Trusted by:</h4>
     </div>
-    <div class="trusts col-10">
+    <div class="trusts col-12 col-md-9">
 
       <owl-carousel-o [options]="trustedOptions">
 
@@ -91,12 +92,12 @@
             <h1>2.4K</h1>
             <p>Positive Review</p>
           </div>
-          <i style="font-size: 40px;" class="bi bi-stars"></i>
+          <i class="bi bi-stars"></i>
         </div>
-        <div class="h-75 pt-2"> <img class="imgCss rounded-3" src="../../../assets/02.jpg" alt=""></div>
+        <div class="h-75 pt-2"> <img class="imgCss rounded-3" src="./assets/02.jpg" alt=""></div>
       </div>
       <div class="col-8 px-0 position-relative center-center WF1Right"> <img class="imgCss rounded-3"
-          src="../../../assets/01.jpg" alt="">
+          src="./assets/01.jpg" alt="">
         <div class="borderPlay center-center" id="border">
           <div class="play center-center"><i class="bi bi-play-fill secTextColor fs-3"></i></div>
         </div>
@@ -113,14 +114,14 @@
           all backgrounds.</p>
       </div>
       <div class="col-12  row m-0 H2Mid border-bottom mt-3">
-        <div class="col-6 p-0 py-5 center-start">
+        <div class="col-12 col-md-6 p-0 py-md-5 py-3 center-start">
           <div class="icon bg-gradient me-2 center-center rounded-2"><i class="bi bi-book fs-2 text-white"></i></div>
           <div>
             <h5>Learn with Expert</h5>
             <p>We are passionate education.</p>
           </div>
         </div>
-        <div class="col-6 p-0 py-5 center-start">
+        <div class="col-12 col-md-6 p-0 py-md-5 py-3 center-start">
           <div class="icon bg-gradient me-2 center-center rounded-2"><i class="bi bi-building fs-2 text-white"></i>
           </div>
           <div>
@@ -130,29 +131,31 @@
         </div>
       </div>
       <div class="H2Bot">
-        <div class="col-12 p-0 py-3 center-between">
-          <div class="d-flex">
+        <div class="col-12 p-0 py-3 center-between row m-0">
+          <div class="d-flex col-12 col-md-8">
             <div class="img me-4">
-              <div><img src="../../../assets/client-sm-3.jpg" alt=""></div>
+              <div><img src="./assets/client-sm-3.jpg" alt=""></div>
             </div>
+
             <div class=" d-flex justify-content-center flex-column">
 
               <h6>William James</h6>
               <p>CEO, Studyhub Online Education</p>
             </div>
           </div>
-          <button class="btn mainBgColor text-white rounded-3 px-5 py-3">About Us</button>
+          <button class="btn mainBgColor text-white rounded-3 px-5 py-3 col-12 col-md-4 mt-3 mt-md-0">About Us</button>
         </div>
       </div>
     </div>
   </div>
+
   <div class="slider my-5 ">
     <div class="center-center flex-column py-4">
 
       <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Top Category
       </p>
-      <h2 class="my-2">Explore 2000+ Free Online Courses</h2>
-      <p class="text-secondary">You'll find something to spark your curiosity and enhance</p>
+      <h2 class="my-2 text-center">Explore 2000+ Free Online Courses</h2>
+      <p class="text-secondary text-center">You'll find something to spark your curiosity and enhance</p>
     </div>
     <owl-carousel-o [options]="customOptions">
 
@@ -174,17 +177,18 @@
 
     </owl-carousel-o>
   </div>
+
   <div class="courses">
 
-    <div class="d-flex align-items-center justify-content-between py-4">
-      <div>
+    <div class="d-flex align-items-center justify-content-between py-4 row m-0">
+      <div class=" col-12 col-lg-4 ">
 
         <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Courses</p>
         <h2 class="my-2">Explore Featured Courses</h2>
         <p class="text-secondary">You'll find something to spark your curiosity and enhance</p>
       </div>
-      <div class="filter">
-        <ul>
+      <div class="filter col-12  col-lg-8 pt-3 pt-lg-0 d-flex align-items-center justify-content-end">
+        <ul class="p-0 m-0">
           <li [ngClass]="{'active': filterTap == 'All'}" (click)="filterTap = 'All'">All</li>
           <li [ngClass]="{'active': filterTap == 'Accounting'}" (click)="filterTap = 'Accounting'" class="active">
             Accounting</li>
@@ -197,15 +201,16 @@
     </div>
 
     <div class="row m-0">
-      <div class="course col-3" *ngFor="let course of courses let i = index">
+      <div class="course col-12 col-sm-6 col-md-4 col-lg-3 " *ngFor="let course of courses let i = index">
         <app-course [course]="course"></app-course>
       </div>
     </div>
   </div>
+
 </section>
 <app-choose-us></app-choose-us>
 
- <app-events></app-events>
+<app-events></app-events>
 <section class="numbers row m-0">
   <div class="col-12 col-md-6 col-lg-3 text-white fs-5 center-center box">
     <div class="numBorder numBorder1 w-100 center-center flex-column">

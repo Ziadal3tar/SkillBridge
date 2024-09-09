@@ -1,10 +1,8 @@
 section {
   width: 100%;
-  background-image: url(../../../assets/choose-bg.jpg);
+  background-image: url(/assets/choose-bg.jpg);
 
-  // background-image: ;
   .img1 {
-    // width: 100%;
     padding: 10px;
 
   }
@@ -12,6 +10,52 @@ section {
   .img2 {
     padding: 30px;
     transform: translateY(60px);
+  }
+
+  .rightHalh {
+    .texts {}
+
+    .rightBottom {
+      .Advantages {
+        padding: 0 10px 0 0;
+        // height: 60px;
+
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(255, 255, 255, 0.213);
+          height: auto;
+          border-radius: 6px;
+          color: white;
+          padding: 10px 0;
+
+          svg {
+            width: 55px;
+            padding-bottom: 10px;
+          }
+
+          p {
+
+            font-weight: 600;
+            white-space: nowrap;
+          }
+
+          @media (min-width:992px) and (max-width:1400px) {
+            p {
+              font-size: 10px;
+            }
+          }
+
+          @media (max-width:680px) {
+            p {
+              font-size: 8px;
+            }
+          }
+
+        }
+      }
+    }
   }
 
   .imgs {
@@ -26,37 +70,12 @@ section {
 
   .rotate {
     width: 25%;
-    top: 35%;
+    top: 50%;
     right: 53%;
     border-radius: 50% 50% 50% 50%;
     filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
     transition: 2000s;
   }
 
-  .rightBottom {
-    .Advantages {
-      padding:0 10px 0 0;
-      height: 60px;
 
-        .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid rgba(255, 255, 255, 0.213);
-        padding: 0;
-        height: 60px;
-        border-radius: 6px;
-        color: white;
-
-        svg {
-          margin: 20px;
-        }
-
-        p {
-
-          font-weight: 600;
-        }
-      }
-    }
-  }
 }

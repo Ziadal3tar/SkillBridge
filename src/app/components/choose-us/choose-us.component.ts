@@ -13,9 +13,14 @@ export class ChooseUsComponent {
   banner2Transform: string = '';
   banner3Transform: string = '';
   ngOnInit(): void {
-    let rotate: HTMLElement | any = document.getElementById('rotate');
-rotate.style.rotate= '100000deg';
+    if (typeof document !== 'undefined') {
+      let rotate: HTMLElement | any = document.getElementById('rotate');
+      if (rotate) {
+        rotate.style.rotate = '100000deg';
+      }
+    }
   }
+
   onMouseMove(event: MouseEvent) {
     const movementFactor = 0.04;
     const moveX = event.clientX * movementFactor;
@@ -24,4 +29,5 @@ rotate.style.rotate= '100000deg';
     this.banner2Transform = `translateX(${moveX}px)`;
     this.banner3Transform = `translateX(${moveX}px)`;
   }
+
 }

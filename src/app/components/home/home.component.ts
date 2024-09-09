@@ -35,19 +35,19 @@ export class HomeComponent {
   ];
   trusted=[
     {
-      imgSrc:'../../../assets/trus1.svg'
+      imgSrc:'./assets/trus1.svg'
     },
     {
-      imgSrc:'../../../assets/trus2.svg'
+      imgSrc:'./assets/trus2.svg'
     },
     {
-      imgSrc:'../../../assets/trus3.svg'
+      imgSrc:'./assets/trus3.svg'
     },
     {
-      imgSrc:'../../../assets/trus4.svg'
+      imgSrc:'./assets/trus4.svg'
     },
     {
-      imgSrc:'../../../assets/trus5.svg'
+      imgSrc:'./assets/trus5.svg'
     }
   ]
   courses=[
@@ -58,7 +58,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -68,7 +68,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -78,7 +78,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -88,7 +88,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -98,7 +98,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -108,7 +108,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -118,7 +118,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -128,7 +128,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
   {
@@ -138,7 +138,7 @@ export class HomeComponent {
     rating:'3',
     lessons:[1,2,3,4,5,6,7,8,9,1,11,12,13,14,15,16,17,18,19],
     students:[1,2,3,4,5,6,7,8,9,1,11,12],
-    imgSrc:'../../../assets/post-3.jpg',
+    imgSrc:'./assets/post-3.jpg',
 
   },
 
@@ -179,6 +179,7 @@ export class HomeComponent {
     touchDrag: true,
     pullDrag: true,
     dots: false,
+    nav:false,
     navSpeed: 700,
     navText: [
       ' <i class="bi bi-caret-left-fill "></i> ',
@@ -186,13 +187,13 @@ export class HomeComponent {
     ],
     responsive: {
       0: {
-        items: 1,
+        items: 3,
       },
       400: {
-        items: 2,
+        items: 3,
       },
       740: {
-        items: 3,
+        items: 4,
       },
       940: {
         items: 5,
@@ -201,26 +202,30 @@ export class HomeComponent {
         items: 6,
       },
     },
-    nav: true,
   };
-  constructor(){
-    this.borderPlay();
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.borderPlay();
+    }
   }
 
   borderPlay() {
-    let border: HTMLElement | any = document.getElementById('border');
-    if (border) {
-      setTimeout(() => {
-        border.style.border = '1px solid #3a9ac0';
-        border.style.padding = '50px';
+    if (typeof document !== 'undefined') {
+      let border: HTMLElement | any = document.getElementById('border');
+      if (border) {
         setTimeout(() => {
-          border.style.border = '1px solid transparent';
+          border.style.border = '1px solid #3a9ac0';
+          border.style.padding = '50px';
           setTimeout(() => {
-            border.style.padding = '0px';
-            this.borderPlay();
-          }, 2000);
-        }, 1000);
-      }, 2000);
+            border.style.border = '1px solid transparent';
+            setTimeout(() => {
+              border.style.padding = '0px';
+              this.borderPlay();
+            }, 2000);
+          }, 1000);
+        }, 2000);
+      }
     }
   }
+
 }
