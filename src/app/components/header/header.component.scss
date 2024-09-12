@@ -1,0 +1,108 @@
+header {
+  @media (max-width:768px) {
+    flex-wrap: wrap-reverse;
+  }
+
+  .leftHalf {
+    >* {
+      padding: 15px 0;
+    }
+
+    h1 {
+      width: 90%;
+      font-size: 50px;
+      font-weight: 800;
+
+      @media (max-width:768px) {
+        font-size: 28px;
+        width: 100%;
+      }
+
+      span {
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 100%;
+          height: 5px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: rgb(255, 183, 0);
+          padding: 0;
+          border-radius: 4px 60% 10% 0px;
+        }
+      }
+    }
+
+    p {
+      width: 75%;
+
+      @media (max-width:768px) {
+        width: 100%;
+      }
+    }
+
+    .lastLine {
+      button {
+        height: fit-content;
+        padding: 10px;
+        text-wrap: nowrap;
+      }
+
+      .students {
+        .img2 {
+          transform: translateX(-15px);
+        }
+
+        .img3 {
+          transform: translateX(-30px);
+          position: relative;
+
+          .layer {
+            width: 100%;
+            height: 100%;
+            background-color: #03275a57;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        .img {
+          height: 50px;
+          width: 50px;
+          background-color: aqua;
+          border-radius: 50%;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          border: 5px solid white;
+
+          img {
+            object-fit: contain;
+            object-position: center;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .rightHalf {
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+
+      @media (max-width:768px) {
+        width: 70%;
+        object-position: center;
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+<div class="row m-0 trustBy center-center">
+
+  <div class="col-12 col-md-3 center-center">
+    <h4 class="">Trusted by:</h4>
+  </div>
+  <div class="trusts col-12 col-md-9">
+
+    <owl-carousel-o [options]="trustedOptions">
+
+      <ng-container *ngFor="let item of trusted ">
+        <ng-template carouselSlide>
+
+          <div class="trustLogo center-center">
+
+            <img [src]="item.imgSrc">
+          </div>
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</div>

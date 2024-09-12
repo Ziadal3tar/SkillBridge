@@ -78,7 +78,7 @@
 
           </div>
         </li>
-        <li><a>DashBoard</a></li>
+        <li routerLink="/dashboard"><a>Dashboard</a></li>
         <li><a>Blog</a></li>
       </ul>
     </div>
@@ -92,7 +92,8 @@
     <button class="btn signup">SignUp</button>
   </div>
   <div class="col-9 center-end d-flex d-lg-none">
-    <svg (click)="openSideNav = true" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg (click)="openSideNav = true" width="20" height="16" viewBox="0 0 20 16" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
       <rect y="14" width="18" height="2" fill="#000000"></rect>
       <rect y="7" width="18" height="2" fill="#000000"></rect>
       <rect width="18" height="2" fill="#000000"></rect>
@@ -181,9 +182,18 @@
           </div>
         </div>
       </li>
-      <li><a>Dashboard</a></li>
+      <li routerLink="/dashboard"><a>Dashboard</a></li>
       <li><a>Blog</a></li>
 
+      <div class="col-3 user  ">
+        <div class="cart center-center pointer position-relative"><i
+            class="bi bi-cart3  px-3"></i>
+
+          <p class="length position-absolute top-0 end-0 center-center">0</p>
+        </div>
+        <button class="btn login">LogIn</button>
+        <button class="btn signup">SignUp</button>
+      </div>
     </ul>
   </div>
 </div>

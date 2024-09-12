@@ -1,0 +1,36 @@
+<section class="feedbacks mainPadding my-5">
+  <div class="center-center flex-column py-4 ">
+
+    <p class="secTextColor fw-bold"><i class="bi bi-lightbulb-fill pe-2"></i>Student Review
+    </p>
+    <h2 class="my-2 text-center">Our Students Feedback</h2>
+    <p class="text-secondary text-center">You'll find something to spark your curiosity and enhance</p>
+  </div>
+
+  <div class="box ">
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-container *ngFor="let slide of feedbacks">
+        <ng-template carouselSlide>
+          <div class="feedback row m-0">
+            <div class="img center-center col-12 col-lg-4 row m-0"><img src="../../../assets/instractor1.jpg"></div>
+            <div class="data col-12 col-lg-7 offset-0 offset-lg-1">
+              <div class="quote"><i class="bi bi-quote"></i></div>
+              <div class=" col-12 col-md-10 ">
+                <h4>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical
+                  Latin literature from 45 BC, making it over 2000 years old.</h4>
+              </div>
+              <div><i *ngFor="let item of [0,0,0,0]" class="bi bi-star-fill text-warning mx-1"></i></div>
+              <div>
+                <h5>EMMA ELIZABETH</h5>
+                <P class="opacity-75">ASSISTANT TEACHER</P>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</section>

@@ -24,14 +24,15 @@ input {
 
 
 .mainBgColor {
-  background-color: #03275a;
+  background-color: #3a9ac0;
+  // 03275a
   &:hover{
     color: #000 !important;
   }
 }
 
 .mainTextColor {
-  color: #03275a;
+  color: #3a9ac0;
 }
 
 .secBgColor {
@@ -58,7 +59,7 @@ input {
 
 .text-hover {
   &:hover {
-    color: #3a9ac0;
+    color: #3a9ac0 !important;
 
   }
 }

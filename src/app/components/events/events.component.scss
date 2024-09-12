@@ -1,11 +1,13 @@
 section {
-  .eventTitle{
-  padding: 40px;
-text-align: center;
-}
+  .eventTitle {
+    padding: 40px;
+    text-align: center;
+  }
+
   .event {
     position: relative;
     padding: 40px;
+
     &:hover {
       &:after {
         height: 100%;
@@ -21,11 +23,12 @@ text-align: center;
       top: 50%;
       width: 5px;
       height: 0%;
-      background-color: red;
+      background-color: #3a9ac0;
       border-radius: 3px 0 0 3px;
       transition: 0.3s;
+
       @media (max-width:993px) {
-display: none;
+        display: none;
       }
     }
 

@@ -1,0 +1,45 @@
+.box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 50px;
+  background-image: url(/assets/choose-bg.jpg);
+  border-radius: 10px;
+
+  .feedback {
+    height: 100%;
+    width: 100%;
+
+    .img {
+      img {
+        border-radius: 30px;
+        // display: none !important;
+        width: 100%;
+                @media (max-width:991px) {
+        width: 50% !important;
+                }
+      }
+
+    }
+
+    .data {
+      color: white;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .quote {
+        i {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel .owl-item img {
+  @media (max-width:768px) {
+    width: 50% !important;
+  }
+}

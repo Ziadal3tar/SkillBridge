@@ -1,0 +1,28 @@
+<div class="slider my-5 mainPadding">
+  <div class="center-center flex-column py-4">
+
+    <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Top Category
+    </p>
+    <h2 class="my-2 text-center">Explore 2000+ Free Online Courses</h2>
+    <p class="text-secondary text-center">You'll find something to spark your curiosity and enhance</p>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+
+    <ng-container *ngFor="let slide of slides">
+      <ng-template carouselSlide>
+        <div class="category center-center">
+
+          <div class="box center-center flex-column">
+
+            <div class=" center-center icon bg-gradient">
+              <i [ngClass]="slide.icon" class=" bi text-white fs-3"></i>
+            </div>
+            <h5 class="my-3">{{slide.category}}</h5>
+            <p>{{slide.num}} Courses</p>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+
+  </owl-carousel-o>
+</div>

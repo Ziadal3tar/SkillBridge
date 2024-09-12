@@ -1,0 +1,28 @@
+<div class="courses mainPadding">
+
+  <div class="d-flex align-items-center justify-content-between py-4 row m-0">
+    <div class=" col-12 col-lg-4 ">
+
+      <p class="secTextColor"><i class="bi bi-lightbulb-fill pe-2"></i>Courses</p>
+      <h2 class="my-2">Explore Featured Courses</h2>
+      <p class="text-secondary">You'll find something to spark your curiosity and enhance</p>
+    </div>
+    <div class="filter col-12  col-lg-8 pt-3 pt-lg-0 d-flex align-items-center justify-content-end">
+      <ul class="p-0 m-0">
+        <li [ngClass]="{'active': filterTap == 'All'}" (click)="filterTap = 'All'">All</li>
+        <li [ngClass]="{'active': filterTap == 'Accounting'}" (click)="filterTap = 'Accounting'" class="active">
+          Accounting</li>
+        <li [ngClass]="{'active': filterTap == 'Business'}" (click)="filterTap = 'Business'">Business</li>
+        <li [ngClass]="{'active': filterTap == 'Dance'}" (click)="filterTap = 'Dance'">Dance</li>
+        <li [ngClass]="{'active': filterTap == 'Development'}" (click)="filterTap = 'Development'">Development</li>
+        <li [ngClass]="{'active': filterTap == 'Marketing'}" (click)="filterTap = 'Marketing'">Marketing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row m-0">
+    <div class="course col-12 col-sm-6 col-md-4 col-lg-3 " *ngFor="let course of courses let i = index">
+      <app-course [course]="course"></app-course>
+    </div>
+  </div>
+</div>

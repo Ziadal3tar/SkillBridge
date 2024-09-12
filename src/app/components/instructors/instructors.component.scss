@@ -1,0 +1,36 @@
+.box {
+  .img {
+    .connects {
+      width: 50px;
+      height: 45px;
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      overflow: hidden;
+      transition: 0.5s;
+
+      &:hover {
+        height: 225px;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+          width: 35px;
+          height: 35px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5px;
+          border-radius: 5px;
+          color: #3a9ac0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

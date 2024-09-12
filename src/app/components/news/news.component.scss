@@ -1,0 +1,24 @@
+.news {
+  .new {
+    .box {
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+      .data{
+        div{
+          margin-right: 15px;
+          display: flex;
+          i{
+            margin-right: 6px;
+            color:  #3a9ac0;
+          }
+          p{
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}

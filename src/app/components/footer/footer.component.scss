@@ -1,0 +1,94 @@
+footer {
+  .SkillBridge {
+    background-image: url(/assets/choose-bg.jpg);
+    overflow: hidden;
+
+
+      .img {
+        img {
+          // transform: translateY(25px);
+
+        }
+    }
+  }
+
+  .footer {
+    .left {
+      >* {
+        margin: 0 0 20px 0;
+        ;
+      }
+
+      i {
+        color: #3a9ac0;
+      }
+
+      .logo {
+        height: 50px;
+
+        img {
+          height: 100%;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .center {
+      p {
+        font-weight: 900;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .right {
+
+
+      h6 {
+        font-weight: 900;
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .input {
+        margin-bottom: 20px;
+        input{
+          border: 1px solid rgb(201, 201, 201);
+          border-radius: 4px;
+        }
+        button{
+          height: 34px;
+          top: calc(50% - 17px);
+          margin-right: 10px;
+          font-size: 13px;
+        }
+
+      }
+
+      .checkbox {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: baseline;
+        input{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.Copyright{
+  i{
+    cursor: pointer;
+  }
+}

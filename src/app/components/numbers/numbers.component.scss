@@ -1,0 +1,32 @@
+.numbers {
+
+    width: 100%;
+    background-image: url(/assets/choose-bg.jpg);
+    height: auto;
+    padding: 30px 0;
+
+    div {
+      margin: 20px 0;
+
+      @media (min-width : 768px) and (max-width : 992px) {
+
+        .numBorder1,
+        .numBorder3 {
+          border-right: 1px solid white;
+        }
+      }
+
+      @media (min-width : 992px) {
+
+        .numBorder1,
+        .numBorder2,
+        .numBorder3 {
+          border-right: 1px solid white;
+        }
+      }
+    }
+
+    svg {
+      margin: 0 0 10px 0;
+    }
+  }
