@@ -1,22 +1,22 @@
 <nav class="col-12 row m-0 mainPadding">
-  <div class="col-3 logoBox d-flex align-items-center">
+  <div class="col-3 logoBox d-flex align-items-center pointer" (click)="router('home')">
     <img src="./assets/LOGO.png" alt="">
     <p>SkillBridge </p>
   </div>
   <div class="col-6 row navBox center-center m-0 d-none d-lg-flex">
     <div class="col-12 box m-0">
       <ul class="center-between">
-        <li><a>Home</a></li>
+        <li (click)="router('home')"><a>Home</a></li>
         <li (mouseleave)="liActive = '' " (mouseenter)="liActive = 'Pages'"><a>Pages</a> <i
             class="bi bi-caret-down-fill ms-1"></i>
           <div [ngClass]="{'closeHover': liActive != 'Pages'}" class="liDropDown row col-12 m-0 ">
             <ul>
-              <li>About Us</li>
-              <li>Contact</li>
-              <li>Profile</li>
-              <li>Events</li>
+              <li (click)="router('aboutUs')">About Us</li>
+              <li (click)="router('contact')">Contact</li>
+              <li (click)="router('profile')">Profile</li>
+              <li (click)="router('events')">Events</li>
               <li>Shop</li>
-              <li>Error 404</li>
+              <li (click)="router('Error')">Error 404</li>
             </ul>
           </div>
         </li>
@@ -78,8 +78,8 @@
 
           </div>
         </li>
-        <li routerLink="/dashboard">Dashboard</li>
-        <li><a>Blog</a></li>
+        <li (click)="router('dashboard')">Dashboard</li>
+        <li (click)="router('blog')"><a>Blog</a></li>
       </ul>
     </div>
   </div>
@@ -88,7 +88,7 @@
 
       <p class="length position-absolute top-0 end-0 center-center">0</p>
     </div>
-    <button class="btn login ">LogIn</button>
+    <button class="btn login " (click)="router('register')"  > LogIn</button>
     <button class="btn signup ">SignUp</button>
   </div>
   <div class="col-9 center-end d-flex d-lg-none">
@@ -186,8 +186,7 @@
       <li><a>Blog</a></li>
 
       <div class="col-3 user  ">
-        <div class="cart center-center pointer position-relative mx-0"><i
-            class="bi bi-cart3  px-3"></i>
+        <div class="cart center-center pointer position-relative mx-0"><i class="bi bi-cart3  px-3"></i>
 
           <p class="length position-absolute top-0 end-0 center-center">0</p>
         </div>

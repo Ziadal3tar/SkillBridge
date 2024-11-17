@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { InputRegisterComponent } from '../../repeats/input-register/input-register.component';
 import { AuthService } from '../../services/auth.service';
 import { logIn } from '../../graphql/graphql.queries';
-import { Apollo } from 'apollo-angular';
-import { HttpErrorResponse } from '@angular/common/http';
+import { Apollo, ApolloModule } from 'apollo-angular';
+import {HttpErrorResponse } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ConfirmEmailComponent } from '../confirm-email/confirm-email.component';
 @Component({
   selector: 'app-registrations',
   standalone: true,
-  imports: [InputRegisterComponent, CommonModule, ConfirmEmailComponent],
+  imports: [ApolloModule,InputRegisterComponent, CommonModule, ConfirmEmailComponent],
   templateUrl: './registrations.component.html',
   styleUrl: './registrations.component.scss',
 })
@@ -22,7 +22,9 @@ export class RegistrationsComponent {
   ifLogin: Boolean = true;
   loading: Boolean = false;
 
-  constructor(private _auth: AuthService, private Apollo: Apollo) {}
+  constructor(private _auth: AuthService,
+              // private Apollo: Apollo
+    ) {}
   logIn() {
     let data = {
       email: this.email,

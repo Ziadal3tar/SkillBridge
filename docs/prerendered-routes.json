@@ -1,7 +1,12 @@
 {
   "routes": [
+    "/aboutUs",
+    "/contact",
     "/dashboard",
+    "/events",
     "/home",
-    "/register"
+    "/profile",
+    "/register",
+    "/shop"
   ]
 }

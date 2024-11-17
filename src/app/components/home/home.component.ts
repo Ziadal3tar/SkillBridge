@@ -19,11 +19,12 @@ import { DisplayInstructorsComponent } from "../display-instructors/display-inst
 import { NumbersComponent } from "../numbers/numbers.component";
 import { DisplayCoursesComponent } from "../display-courses/display-courses.component";
 import { CoursesCategoryComponent } from "../courses-category/courses-category.component";
+import { NavComponent } from "../nav/nav.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, CarouselModule, CourseComponent, ChooseUsComponent, EventsComponent, InstructorsComponent, FeedbackComponent, FooterComponent, NewsComponent, HeaderComponent, TrustByComponent, WishlistComponent, WorldWideComponent, DisplayInstructorsComponent, NumbersComponent, DisplayCoursesComponent, CoursesCategoryComponent],
+  imports: [CommonModule, RouterModule, CarouselModule, CourseComponent, ChooseUsComponent, EventsComponent, InstructorsComponent, FeedbackComponent, FooterComponent, NewsComponent, HeaderComponent, TrustByComponent, WishlistComponent, WorldWideComponent, DisplayInstructorsComponent, NumbersComponent, DisplayCoursesComponent, CoursesCategoryComponent, NavComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
