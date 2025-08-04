@@ -21,7 +21,7 @@ export class NavComponent {
     }
   }
   router(page: any) {
-
+ this.openSideNav= false
     this._Router.navigate([`/${page}`]);
   }
 }

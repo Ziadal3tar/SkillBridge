@@ -18,8 +18,6 @@ export class AuthService {
     // })
   }
 
-
-
   signUp(data: { createUserInput: any }): any {
     // return this.Apollo.mutate({
     //   mutation: signUp,
@@ -38,6 +36,7 @@ export class AuthService {
     //   },
     // });
   }
+
   sendCode(data:any ): any {
     // return this.Apollo.mutate({
     //   mutation: sendCode,

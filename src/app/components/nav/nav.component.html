@@ -115,12 +115,12 @@
         </div>
         <div class="col-12 dropDown" [ngClass]="{'closeLiSideNav': sideNavLiActive != 'Pages'}">
           <ul>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Profile</li>
-            <li>Events</li>
-            <li>Shop</li>
-            <li>Error 404</li>
+            <li (click)="router('aboutUs')">About Us</li>
+            <li (click)="router('contact')">Contact</li>
+            <li (click)="router('profile')">Profile</li>
+            <li (click)="router('events')">Events</li>
+            <li (click)="router('events')">Shop</li>
+            <li (click)="router('Error')">Error 404</li>
           </ul>
         </div>
       </li>
@@ -182,16 +182,16 @@
           </div>
         </div>
       </li>
-      <li routerLink="/dashboard">Dashboard</li>
-      <li><a>Blog</a></li>
+      <li (click)="router('dashboard')">Dashboard</li>
+      <li (click)="router('blog')"><a>Blog</a></li>
 
       <div class="col-3 user  ">
         <div class="cart center-center pointer position-relative mx-0"><i class="bi bi-cart3  px-3"></i>
 
           <p class="length position-absolute top-0 end-0 center-center">0</p>
         </div>
-        <button class="btn login mx-0">LogIn</button>
-        <button class="btn signup mt-2 mt-lg-0 mx-0">SignUp</button>
+        <button (click)="router('register')" class="btn login mx-0">LogIn</button>
+        <button class="btn signup mt-2 mt-lg-0 mx-0" (click)="router('register')">SignUp</button>
       </div>
     </ul>
   </div>
